@@ -1,210 +1,131 @@
-# 💠 Obsidian OS – Full-Fledged AI-Powered Operating System
 
-## 🔷 Project Overview
-**Goal:** Build a modern, AI-powered, full-fledged operating system from scratch, with built-in AI assistants, optimized performance, modular architecture, and a sleek UI/UX layer.
 
----
 
-## 🔷 System Architecture
 
-### 🧱 Core Layers
+<!-- Banner -->
+<p align="center">
+  <img src="https://i.imgur.com/BANNERYOUR.png" alt="Obsidian Banner" width="100%" />
+</p>
 
-1. **Bootloader** – Initializes hardware, loads the kernel.
-2. **Kernel** – Manages memory, processes, devices, system calls, etc.
-3. **Device Drivers** – Interfaces with hardware components.
-4. **System Services** – Handles networking, file systems, etc.
-5. **User Space** – Shell, GUI, applications.
-6. **AI Layer** – Built-in neural services and offline LLM integration.
-7. **Security Module** – Encryption, sandboxing, authentication.
+<!-- Logo -->
+<p align="center">
+  <img src="https://i.imgur.com/LOGOYOUR.png" alt="Obsidian Logo" width="140" />
+</p>
 
----
+<h1 align="center">⚫ Obsidian OS</h1>
 
-## 🔷 Technology Stack
+<p align="center">
+  <i>A minimalist, bootable, low-level operating system written in pure C and Assembly.</i>  
+</p>
 
-### ⚙️ Core System Stack
-
-| Component         | Language   | Description                                 |
-|------------------|------------|---------------------------------------------|
-| Bootloader        | Assembly   | Initializes CPU, memory, and loads kernel   |
-| Kernel            | C/C++      | Core OS components like memory, task, FS    |
-| Device Drivers    | C          | Interfaces for hardware                     |
-| System Utilities  | Rust/C++   | CLI tools, process managers, etc.           |
-| Shell             | Rust       | Secure and memory-safe custom shell         |
-| File System       | C/Rust     | Custom FS or ext4/fat32 support             |
-
-### 🎨 UI/UX Layer
-
-| Component            | Language/Framework | Description                           |
-|---------------------|--------------------|---------------------------------------|
-| GUI Server           | Rust/C++           | Window manager, compositor            |
-| Desktop Environment  | Flutter/Electron   | Custom DE + AI widgets                |
-| Mobile Interface     | Kotlin/Flutter     | Optional for phones/tablets           |
-
-### 🤖 AI & ML Layer
-
-| Module              | Language       | Description                             |
-|---------------------|----------------|-----------------------------------------|
-| Core LLM Engine      | C++/Rust/Python| Local AI engine (NLP, vision)           |
-| AI Services          | Python (FastAPI)| Image recognition, code suggestion      |
-| Voice Assistant      | Python + C++   | Whisper, TTS, NLP-powered assistant     |
-| Offline Inference    | C++/Rust       | TensorRT for local vision/NLP models    |
+<p align="center">
+  <img src="https://img.shields.io/badge/architecture-x86-informational?style=flat&logo=linux" />
+  <img src="https://img.shields.io/badge/language-C%20%26%20ASM-blue?style=flat&logo=c" />
+  <img src="https://img.shields.io/badge/bootable-yes-green?style=flat&logo=gnu" />
+  <img src="https://img.shields.io/badge/build-pure%20makefile-orange?style=flat&logo=make" />
+</p>
 
 ---
 
-## 🔷 Key Components
+## 🧠 About the Project
 
-### 1. Bootloader
-- Written in Assembly or use GRUB.
-- Loads and jumps to the kernel.
-
-### 2. Kernel
-- Multitasking
-- Virtual Memory
-- IPC
-- System Calls
-- File System Manager
-- Scheduler
-
-### 3. Drivers
-- USB, Keyboard, GPU, Sound
-- Written in C
-
-### 4. Filesystem
-- Create `ObsidianFS` or support ext4
-- Journaling, Permissions
-
-### 5. Security
-- Secure Boot
-- Process Sandboxing
-- Encrypted storage
+> Obsidian is a lightweight kernel designed to demystify how operating systems work under the hood. From custom bootloaders to basic CLI handling, this project dives into bare-metal programming.
 
 ---
 
-## 🔷 AI Features in Obsidian
+## 🚀 Demo Preview
 
-| Feature               | Description                                 |
-|----------------------|---------------------------------------------|
-| Voice Assistant       | Local Whisper + LLM responses               |
-| Contextual Suggestions| Code completions, documentation help       |
-| Vision API            | AI webcam utilities                         |
-| Autonomous Agents     | File management, task automation            |
-| Natural Language Shell| "Delete all downloads" runs actual command |
+<p align="center">
+  <img src="https://i.imgur.com/yourPreviewGif.gif" alt="Obsidian Boot Demo" width="80%" />
+</p>
 
 ---
 
-## 🔷 Toolchain
+## ⚙️ Features
 
-- **Compilers**: `GCC`, `Clang`, `NASM`, `LLVM`
-- **Build Systems**: `Make`, `CMake`, `Ninja`
-- **Debuggers**: `QEMU`, `Bochs`, `GDB`
-- **Testing**: `VirtualBox`, `UEFI Boot`, `QEMU`
-
----
-
-## 🔷 Roadmap
-
-### Phase 1 – Core System
-- [ ] Bootloader
-- [ ] Kernel
-- [ ] File system + Shell
-
-### Phase 2 – AI Integration
-- [ ] Voice assistant
-- [ ] Local LLM engine
-- [ ] AI CLI/GUI suggestions
-
-### Phase 3 – GUI/DE
-- [ ] GUI server + Compositor
-- [ ] Desktop Environment
-- [ ] AI Widgets
-
-### Phase 4 – Package Manager
-- [ ] ObsidianPKG system
-- [ ] Package signing and distribution
-
-### Phase 5 – Deployment
-- [ ] ISO image
-- [ ] Secure boot
-- [ ] Testing on real hardware
+- 🧠 Bootable from BIOS (via QEMU / VirtualBox)
+- ⚙️ Custom kernel with text interface
+- 🔌 x86 Interrupt Handling & ISRs
+- 💾 Minimal binary footprint
+- 🛠️ NASM + C integration
+- 🧪 Pure Makefile build system
 
 ---
 
-## 🔷 Programming Languages
+## 🛠️ Tech Stack
 
-| Language   | Purpose                             |
-|------------|--------------------------------------|
-| Assembly   | Bootloader, hardware initialization  |
-| C          | Kernel, drivers, file system         |
-| C++        | Kernel modules, AI core              |
-| Rust       | Shell, GUI, system tools             |
-| Python     | AI backend, assistant, APIs          |
-| Flutter    | GUI frontend                         |
-| Bash       | Init scripts                         |
-| JS/HTML/CSS| Electron-based apps (optional)       |
+Languages:
+  - C
+  - Assembly (NASM)
+
+Tools:
+  - QEMU (Virtualization)
+  - GNU Make
+  - x86 BIOS Bootloader
+
 
 ---
 
-## 🔷 Quick Start
+## 📂 Project Structure
 
-### Prerequisites
-```bash
-# Install required tools
-sudo apt update
-sudo apt install build-essential cmake ninja-build qemu-system-x86 nasm
-sudo apt install python3 python3-pip rust cargo
 ```
-
-### Build Instructions
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/obsidian-os.git
-cd obsidian-os
-
-# Build the system
-make build
-
-# Run in QEMU
-make run
-```
-
-### Development
-```bash
-# Set up development environment
-make dev-setup
-
-# Run tests
-make test
-
-# Build specific components
-make kernel
-make ai-engine
-make gui
+📁 Obsidian/
+├── 🔧 bootloader/       # Real-mode boot code
+├── 💻 src/              # Kernel source (C/ASM)
+├── 📐 include/          # Header files
+├── 🗃️ bin/              # Compiled binaries
+├── 🧰 Makefile          # Build script
+└── 📄 README.md         # You are here
 ```
 
 ---
 
-## 🔷 Contributing
+## 🧪 Build & Run Locally
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+ ### Clone the repo
+```bash
+git clone https://github.com/Dev-axay18/Obsidian
+cd Obsidian
+```
+### Build kernel and boot
+```bash
+make
+qemu-system-x86_64 -kernel bin/obsidian.bin
+```
 
----
-
-## 🔷 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🔷 Contact
-
-- **Project Lead**: Akshay Kale
-- **Email**: kaleakshay8856@gmail.com
-- **GitHub**: [@yourusername](https://github.com/yourusername)
+✅ Requires `qemu`, `nasm`, and `make` installed on your system.
 
 ---
 
-**🚀 Ready to build the future of operating systems!** 
+## 📈 Roadmap
+
+* [x] BIOS-based boot
+* [x] Simple kernel entry
+* [x] Custom screen printing functions
+* [ ] Input handling
+* [ ] File system support
+* [ ] Shell with basic commands
+* [ ] Multithreading
+* [ ] Networking stack (experimental)
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+Feel free to use, fork, modify — just give credit where it’s due ❤️
+
+---
+
+## 🙌 Credits & Inspirations
+
+* [OSDev.org](https://wiki.osdev.org/Main_Page)
+* [Tanenbaum’s Modern Operating Systems](https://www.pearson.com/en-us/subject-catalog/p/modern-operating-systems/P200000003805/9780133591620)
+* [Programology](https://www.youtube.com/watch?v=SL--qoiu7yA&list=PLR2FqYUVaFJpHPw1ExSVJZFNlXzJYGAT1)
+
+
+---
+
+---
+
+
