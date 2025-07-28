@@ -1,0 +1,60 @@
+# 💠 Obsidian OS - Python Dependencies
+# AI and ML components for the operating system
+
+# Core AI/ML libraries
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.30.0
+tokenizers>=0.13.0
+numpy>=1.24.0
+scipy>=1.10.0
+scikit-learn>=1.3.0
+
+# Speech and Audio Processing
+whisper-openai>=20231117
+speechrecognition>=3.10.0
+pyttsx3>=2.90
+librosa>=0.10.0
+soundfile>=0.12.0
+
+# Computer Vision
+opencv-python>=4.8.0
+pillow>=10.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Web Framework for AI Services
+fastapi>=0.100.0
+uvicorn>=0.23.0
+pydantic>=2.0.0
+
+# Natural Language Processing
+nltk>=3.8.0
+spacy>=3.6.0
+textblob>=0.17.0
+gensim>=4.3.0
+
+# System Integration
+psutil>=5.9.0
+pyudev>=0.24.0
+pynput>=1.7.0
+
+# Development and Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.5.0
+
+# Utilities
+requests>=2.31.0
+aiohttp>=3.8.0
+websockets>=11.0.0
+python-dotenv>=1.0.0
+click>=8.1.0
+rich>=13.0.0
+tqdm>=4.65.0
+
+# Hardware Acceleration
+onnxruntime>=1.15.0
+tensorrt>=8.6.0  # Note: May require NVIDIA GPU 

@@ -1,0 +1,770 @@
+# 💠 Obsidian OS - Git Ignore File
+# Comprehensive ignore patterns for the AI-powered operating system project
+
+# Build artifacts
+build/
+dist/
+target/
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.a
+*.lib
+*.exe
+*.bin
+*.iso
+*.img
+
+# Kernel build files
+kernel/*.o
+kernel/*.elf
+kernel/*.bin
+kernel/*.map
+
+# Bootloader build files
+bootloader/*.o
+bootloader/*.bin
+bootloader/*.elf
+
+# Rust build artifacts
+shell/target/
+shell/Cargo.lock
+*.rlib
+*.rmeta
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# AI model files (large files)
+ai/models/*.onnx
+ai/models/*.pt
+ai/models/*.pth
+ai/models/*.bin
+ai/models/*.safetensors
+ai/models/*.gguf
+ai/models/*.ggml
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Log files
+*.log
+logs/
+log/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Configuration files with sensitive data
+config/local.json
+config/secrets.json
+.env
+.env.local
+.env.production
+
+# Package manager files
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Documentation build
+docs/_build/
+docs/build/
+
+# Test artifacts
+test-results/
+coverage/
+.nyc_output/
+
+# QEMU and virtualization
+*.qcow2
+*.vmdk
+*.vdi
+*.vhd
+*.raw
+
+# Compiler specific
+*.gcno
+*.gcda
+*.gcov
+
+# Debug symbols
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# CMake build files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+
+# Assembly artifacts
+*.lst
+*.map
+
+# Linker artifacts
+*.ld
+
+# Kernel modules
+*.ko
+
+# Device tree
+*.dtb
+*.dtbo
+
+# Firmware
+*.fw
+*.bin
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Archive files
+*.tar
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# Large data files
+*.csv
+*.json.gz
+*.parquet
+*.h5
+*.hdf5
+
+# AI training artifacts
+checkpoints/
+runs/
+wandb/
+mlruns/
+
+# System specific
+*.pid
+*.lock
+*.socket
+
+# Network artifacts
+*.pcap
+*.cap
+
+# Security artifacts
+*.key
+*.pem
+*.crt
+*.csr
+*.p12
+*.pfx
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Cache directories
+.cache/
+cache/
+
+# Local development
+local/
+dev/
+development/
+
+# Production artifacts
+prod/
+production/
+deploy/
+
+# Monitoring and metrics
+metrics/
+monitoring/
+prometheus/
+grafana/
+
+# Backup and recovery
+backup/
+recovery/
+snapshots/
+
+# User data (should not be in repo)
+users/
+home/
+personal/
+
+# Large binary files
+*.iso
+*.img
+*.vmdk
+*.qcow2
+*.raw
+
+# Compressed files
+*.gz
+*.bz2
+*.xz
+*.lzma
+
+# Script artifacts
+*.sh~
+*.pyc
+*.pyo
+
+# Documentation artifacts
+*.pdf
+*.doc
+*.docx
+*.odt
+
+# Media files
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.mp3
+*.wav
+*.flac
+*.ogg
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.svg
+
+# Virtual environments
+.venv/
+.conda/
+anaconda/
+miniconda/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Docker
+.dockerignore
+Dockerfile.dev
+docker-compose.override.yml
+
+# Kubernetes
+*.yaml.bak
+*.yml.bak
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Ansible
+*.retry
+
+# CI/CD
+.github/workflows/.cache/
+.gitlab-ci.yml.bak
+.travis.yml.bak
+
+# Local development tools
+.direnv/
+.envrc
+
+# Profiling and debugging
+*.prof
+*.trace
+*.dump
+*.core
+
+# Memory dumps
+*.dmp
+*.hprof
+
+# Performance data
+perf.data
+perf.data.old
+
+# Kernel debugging
+*.ko.debug
+*.ko.unstripped
+
+# Bootloader debugging
+*.boot.debug
+*.boot.map
+
+# Shell debugging
+*.shell.debug
+*.shell.log
+
+# AI model debugging
+*.model.debug
+*.model.log
+
+# GUI debugging
+*.gui.debug
+*.gui.log
+
+# Network debugging
+*.net.debug
+*.net.log
+
+# File system debugging
+*.fs.debug
+*.fs.log
+
+# Security debugging
+*.sec.debug
+*.sec.log
+
+# Package debugging
+*.pkg.debug
+*.pkg.log
+
+# Test debugging
+*.test.debug
+*.test.log
+
+# Integration debugging
+*.int.debug
+*.int.log
+
+# Performance debugging
+*.perf.debug
+*.perf.log
+
+# Memory debugging
+*.mem.debug
+*.mem.log
+
+# CPU debugging
+*.cpu.debug
+*.cpu.log
+
+# GPU debugging
+*.gpu.debug
+*.gpu.log
+
+# TPU debugging
+*.tpu.debug
+*.tpu.log
+
+# Neural engine debugging
+*.ne.debug
+*.ne.log
+
+# Custom ignore patterns for Obsidian OS specific files
+obsidian-os-*.iso
+obsidian-os-*.img
+obsidian-os-*.vmdk
+obsidian-os-*.qcow2
+obsidian-os-*.raw
+
+# AI model specific
+models/*.onnx
+models/*.pt
+models/*.pth
+models/*.bin
+models/*.safetensors
+models/*.gguf
+models/*.ggml
+models/*.tflite
+models/*.pb
+models/*.h5
+models/*.hdf5
+
+# Kernel specific
+kernel/*.ko
+kernel/*.mod
+kernel/*.mod.c
+kernel/*.mod.o
+kernel/*.order
+kernel/*.symvers
+
+# Bootloader specific
+bootloader/*.bin
+bootloader/*.elf
+bootloader/*.map
+
+# Shell specific
+shell/target/
+shell/Cargo.lock
+
+# GUI specific
+gui/build/
+gui/dist/
+gui/node_modules/
+
+# AI specific
+ai/models/
+ai/cache/
+ai/logs/
+ai/checkpoints/
+ai/runs/
+
+# Package specific
+packages/*.deb
+packages/*.rpm
+packages/*.pkg
+packages/*.msi
+packages/*.exe
+
+# Documentation specific
+docs/build/
+docs/_build/
+docs/.doctrees/
+
+# Test specific
+tests/results/
+tests/coverage/
+tests/.pytest_cache/
+
+# Development specific
+dev/
+development/
+local/
+
+# Production specific
+prod/
+production/
+deploy/
+
+# Backup specific
+backup/
+recovery/
+snapshots/
+
+# User specific
+users/
+home/
+personal/
+
+# System specific
+system/
+sys/
+bin/
+sbin/
+lib/
+lib64/
+usr/
+etc/
+var/
+tmp/
+proc/
+sys/
+dev/
+run/
+boot/
+root/
+home/
+
+# Network specific
+network/
+net/
+*.pcap
+*.cap
+
+# Security specific
+security/
+sec/
+*.key
+*.pem
+*.crt
+*.csr
+*.p12
+*.pfx
+
+# Database specific
+database/
+db/
+*.db
+*.sqlite
+*.sqlite3
+
+# Cache specific
+cache/
+.cache/
+
+# Log specific
+logs/
+log/
+*.log
+
+# Temporary specific
+temp/
+tmp/
+*.tmp
+*.temp
+
+# Backup specific
+*.bak
+*.backup
+*.old
+
+# Archive specific
+*.tar
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# Large data specific
+*.csv
+*.json.gz
+*.parquet
+*.h5
+*.hdf5
+
+# AI training specific
+checkpoints/
+runs/
+wandb/
+mlruns/
+
+# System specific
+*.pid
+*.lock
+*.socket
+
+# Network specific
+*.pcap
+*.cap
+
+# Security specific
+*.key
+*.pem
+*.crt
+*.csr
+*.p12
+*.pfx
+
+# Database specific
+*.db
+*.sqlite
+*.sqlite3
+
+# Cache specific
+.cache/
+cache/
+
+# Local development specific
+local/
+dev/
+development/
+
+# Production specific
+prod/
+production/
+deploy/
+
+# Monitoring specific
+metrics/
+monitoring/
+prometheus/
+grafana/
+
+# Backup specific
+backup/
+recovery/
+snapshots/
+
+# User specific
+users/
+home/
+personal/
+
+# Large binary specific
+*.iso
+*.img
+*.vmdk
+*.qcow2
+*.raw
+
+# Compressed specific
+*.gz
+*.bz2
+*.xz
+*.lzma
+
+# Script specific
+*.sh~
+*.pyc
+*.pyo
+
+# Documentation specific
+*.pdf
+*.doc
+*.docx
+*.odt
+
+# Media specific
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.mp3
+*.wav
+*.flac
+*.ogg
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.svg
+
+# Virtual environment specific
+.venv/
+.conda/
+anaconda/
+miniconda/
+
+# Jupyter specific
+.ipynb_checkpoints/
+*.ipynb
+
+# Docker specific
+.dockerignore
+Dockerfile.dev
+docker-compose.override.yml
+
+# Kubernetes specific
+*.yaml.bak
+*.yml.bak
+.terraform/
+.terraform.lock.hcl
+
+# Ansible specific
+*.retry
+
+# CI/CD specific
+.github/workflows/.cache/
+.gitlab-ci.yml.bak
+.travis.yml.bak
+
+# Local development specific
+.direnv/
+.envrc
+
+# Profiling specific
+*.prof
+*.trace
+*.dump
+*.core
+
+# Memory specific
+*.dmp
+*.hprof
+
+# Performance specific
+perf.data
+perf.data.old
+
+# Kernel specific
+*.ko.debug
+*.ko.unstripped
+
+# Bootloader specific
+*.boot.debug
+*.boot.map
+
+# Shell specific
+*.shell.debug
+*.shell.log
+
+# AI specific
+*.model.debug
+*.model.log
+
+# GUI specific
+*.gui.debug
+*.gui.log
+
+# Network specific
+*.net.debug
+*.net.log
+
+# File system specific
+*.fs.debug
+*.fs.log
+
+# Security specific
+*.sec.debug
+*.sec.log
+
+# Package specific
+*.pkg.debug
+*.pkg.log
+
+# Test specific
+*.test.debug
+*.test.log
+
+# Integration specific
+*.int.debug
+*.int.log
+
+# Performance specific
+*.perf.debug
+*.perf.log
+
+# Memory specific
+*.mem.debug
+*.mem.log
+
+# CPU specific
+*.cpu.debug
+*.cpu.log
+
+# GPU specific
+*.gpu.debug
+*.gpu.log
+
+# TPU specific
+*.tpu.debug
+*.tpu.log
+
+# Neural engine specific
+*.ne.debug
+*.ne.log
