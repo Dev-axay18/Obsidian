@@ -1,7 +1,3 @@
-
-
-
-
 <!-- Banner -->
 <p align="center">
   <img src="https://i.imgur.com/BANNERYOUR.png" alt="Obsidian Banner" width="100%" />
@@ -9,10 +5,10 @@
 
 <!-- Logo -->
 <p align="center">
-  <img src="https://i.imgur.com/LOGOYOUR.png" alt="Obsidian Logo" width="140" />
+  <img src="https://github.com/Dev-axay18/Obsidian/blob/main/assets/removed-background%20(logo).png?raw=true" alt="Obsidian Logo" width="210" />
 </p>
 
-<h1 align="center">⚫ Obsidian OS</h1>
+<h1 align="center">Obsidian OS</h1>
 
 <p align="center">
   <i>A minimalist, bootable, low-level operating system written in pure C and Assembly.</i>  
