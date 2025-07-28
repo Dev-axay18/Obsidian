@@ -1,6 +1,6 @@
 <!-- Banner -->
 <p align="center">
-  <img src="https://i.imgur.com/BANNERYOUR.png" alt="Obsidian Banner" width="100%" />
+  <img src="https://github.com/Dev-axay18/Obsidian/blob/main/assets/1.gif?raw=true" alt="Obsidian Banner" width="100%" />
 </p>
 
 <!-- Logo -->
