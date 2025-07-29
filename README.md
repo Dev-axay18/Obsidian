@@ -109,11 +109,11 @@ qemu-system-x86_64 -kernel bin/obsidian.bin
 * [x] BIOS-based boot
 * [x] Simple kernel entry
 * [x] Custom screen printing functions
-* [ ] Input handling
-* [ ] File system support
-* [ ] Shell with basic commands
-* [ ] Multithreading
-* [ ] Networking stack (experimental)
+* [X] Input handling
+* [X] File system support
+* [X] Shell with basic commands
+* [X] Multithreading
+* [X] Networking stack (experimental)
 
 ---
 
