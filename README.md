@@ -23,6 +23,17 @@
 
 ---
 
+<blockquote>
+  <strong style="color: red;">
+    ⚠️ WARNING: DO NOT TRY THIS PROJECT ON YOUR MACHINE UNLESS YOU HAVE PROPER KNOWLEDGE OF ASSEMBLY PROGRAMMING.
+  </strong><br/>
+  
+  <span>This project involves low-level operations that can affect your system’s stability or boot process.</span>
+</blockquote>
+
+
+---
+
 ## 🧠 About the Project
 
 > Obsidian is a lightweight kernel designed to demystify how operating systems work under the hood. From custom bootloaders to basic CLI handling, this project dives into bare-metal programming.
